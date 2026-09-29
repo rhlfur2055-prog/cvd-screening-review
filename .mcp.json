@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cvd-literature": {
+      "command": "uv",
+      "args": ["run", "python", "-m", "src.agent.mcp_server"]
+    }
+  }
+}

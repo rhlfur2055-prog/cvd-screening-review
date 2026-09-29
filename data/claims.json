@@ -1,0 +1,57 @@
+[
+ {
+  "claim": "Korean male CVD prevalence",
+  "value": "6.5",
+  "pmid": "31688694"
+ },
+ {
+  "claim": "Korean female CVD prevalence",
+  "value": "1.1",
+  "pmid": "31688694"
+ },
+ {
+  "claim": "Korean overall CVD prevalence",
+  "value": "3.9",
+  "pmid": "31688694"
+ },
+ {
+  "claim": "Sample size KNHANES",
+  "value": "2686",
+  "pmid": "31688694"
+ },
+ {
+  "claim": "European male prevalence",
+  "value": "8",
+  "pmid": "22472762"
+ },
+ {
+  "claim": "European female prevalence",
+  "value": "0.4",
+  "pmid": "22472762"
+ },
+ {
+  "claim": "TV-plate sensitivity lower bound",
+  "value": "95.5",
+  "pmid": "9390366"
+ },
+ {
+  "claim": "TV-plate sensitivity upper bound",
+  "value": "99.0",
+  "pmid": "9390366"
+ },
+ {
+  "claim": "App specificity best",
+  "value": "95.2",
+  "pmid": "27092927"
+ },
+ {
+  "claim": "App specificity worst",
+  "value": "54.8",
+  "pmid": "27092927"
+ },
+ {
+  "claim": "Hidden-digit plates detect ~half of CVD",
+  "value": "50",
+  "pmid": "9390366"
+ }
+]

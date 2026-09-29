@@ -1,3 +1,27 @@
+당신은 논문 리뷰어입니다. 역할: 방법론·통계 검토자. 결합된 입력의 이질성, 불확실성 구간, 가정의 민감도, 수치 표기의 정확성을 본다.
+
+규칙:
+- 아래 원고와 수치 검증표만 근거로 판단한다. 다른 리뷰어의 의견은 볼 수 없다.
+- 출처 없는 통계는 지적한다. 검증표에서 'unverified-in-abstract'인 값은 원문 확인 전까지 근거로 인정하지 않는다.
+- 형식: 첫 줄에 판정(Accept / Minor Revision / Major Revision / Reject), 이어서 번호 매긴 구체적 지적. 칭찬은 한 줄 이내.
+
+## 수치 검증표
+| Claim | Value | PMID | Status | Full text OA |
+|---|---|---|---|---|
+| Korean male CVD prevalence | 6.5 | 31688694 | verified | False |
+| Korean female CVD prevalence | 1.1 | 31688694 | verified | False |
+| Korean overall CVD prevalence | 3.9 | 31688694 | verified | False |
+| Sample size KNHANES | 2686 | 31688694 | verified | False |
+| European male prevalence | 8 | 22472762 | verified | False |
+| European female prevalence | 0.4 | 22472762 | verified | False |
+| TV-plate sensitivity lower bound | 95.5 | 9390366 | verified | False |
+| TV-plate sensitivity upper bound | 99.0 | 9390366 | verified | False |
+| App specificity best | 95.2 | 27092927 | verified | False |
+| App specificity worst | 54.8 | 27092927 | verified | False |
+| Hidden-digit plates detect ~half of CVD | 50 | 9390366 | verified | False |
+
+
+## 원고
 # 색각 이상 자가 테스트는 얼마나 믿을 수 있는가
 
 ### 발표된 유병률·검사 성능 수치를 결합한 양성예측도 분석
@@ -26,12 +50,12 @@
 |---|---|---|
 | 한국 성인 유병률 | 남 6.5%, 여 1.1%, 전체 3.9% (n=2,686, HRR 검사) | Kim & Ng 2019 |
 | 숨은 숫자 판 민감도 | 색각 이상자의 약 50%만 판별 | Birch 1997 |
-| 변환+소실판 민감도 | 95.5%(8오류 기준) ~ 99.0%(3오류 기준) | Birch 1997 |
+| 변환+소실판 민감도 | 95.5~99% | Birch 1997 |
 | 앱 특이도 | 최고 95.2%, 최저 54.8% | Sorkin 2016 |
 
 ### 2.2 가정 (출처 없음 — 명시)
 
-- 인쇄판 특이도 95%: 문헌값이 아닌 **가정**이다. Birch 1997 초록은 이시하라의 특이도가 앞선 연구(Birch & McKeever 1993)에서 결정되었다고 밝히는데, 본 초안은 그 값을 아직 확인하지 못했다. 민감도 분석 대상(그림 1).
+- 인쇄판 특이도 95%: 문헌값이 아닌 **가정**이다. 민감도 분석 대상(그림 1).
 - 앱 민감도 95.5%: Sorkin의 앱별 민감도를 본 초안이 확인하지 못해 변환+소실판 하한을 **대입**했다. 앱 결과의 PPV는 이 가정에 조건부다.
 
 ### 2.3 계산
@@ -94,3 +118,4 @@ PPV = 유병률·민감도 / (유병률·민감도 + (1−유병률)(1−특이�
 3. Birch J. Ophthalmic Physiol Opt 1997. https://pubmed.ncbi.nlm.nih.gov/9390366/
 4. Sorkin N et al. Optom Vis Sci 2016. https://pubmed.ncbi.nlm.nih.gov/27092927/
 5. Dain SJ, AlMerdef A. Clin Exp Optom 2016. https://pubmed.ncbi.nlm.nih.gov/27146711/
+

@@ -51,13 +51,28 @@ uv run src/build.py      # PDF·PPTX 재생성
 
 원칙: 표에는 코드를 돌려 나온 값만 넣습니다. 원시 데이터가 없는 항목은 만들지 않고 "가정"으로 남깁니다.
 
-### 3. 논문 수집·요약·리뷰 에이전트
+### 3. 연구 에이전트 (반자동)
 
-강의에서 다룬 "문헌 수집 → 분석 → 리뷰어 패널 → 종합" 흐름을 코드로 옮기는 것이 목표입니다. 현재 저장소에서 구현된 것은 그중 **리뷰어 패널의 산출물**(`reviews/`, 사람이 프롬프트로 작성한 시뮬레이션)까지이며, 자동 파이프라인은 아직 없습니다.
+강의 구조(Skill → Subagents → Hooks/Loop/MCP)에 맞춰 `.claude/`와 `src/agent/`에 구현했습니다. **사람이 결정하는 단계(논문 선택, 전문 확인, 결론 문장 변경)는 일부러 자동화하지 않았습니다.**
 
-| 단계 | 상태 |
+| 강의 파트 | 이 저장소 | 상태 |
+|---|---|---|
+| P1 논문 읽기 Skill | `.claude/skills/paper-reader/` (절차·스키마·판단 기준) | 작성됨, 실사용 검증 전 |
+| P1 실험 로그 Skill + 품질 규칙 | `.claude/skills/experiment-log/` | 작성됨, 실사용 검증 전 |
+| P2 Subagents | `.claude/agents/` — literature-reviewer, experiment-planner, critical-reviewer, writing-reviewer | 정의됨, 자동 실행 검증 전 |
+| P3 Hooks | `.claude/settings.json` + `.claude/hooks/` — 수치 게이트(claims 수정 시 재검증), 생성 파일 수동 수정 차단 | 훅 스크립트 단독 실행 테스트 완료(종료코드 확인). Claude Code 안에서의 실제 발동은 미확인 |
+| P3 Loop | `.claude/commands/research-loop.md` (종료 조건 3개, 사람 게이트) | 정의됨, 실행 안 해봄 |
+| P3 MCP | `.mcp.json` + `src/agent/mcp_server.py` (search_papers, get_paper, verify_claims) | 도구 3개 등록 확인, Claude Code 연결은 미확인 |
+
+**실제로 자동 동작하는 것** (`uv run python -m src.agent.cli <명령>`)
+
+| 명령 | 동작 |
 |---|---|
-| 문헌 검색·수집(API) | 계획 |
-| 초록/전문 요약 | 계획 |
-| 5인 리뷰어 패널 자동 실행 | 산출물만 존재, 자동화 계획 |
-| 리뷰 종합 → 원고 수정 | 수동 수행 |
+| `collect` | Europe PMC에서 초록·오픈액세스 여부를 받아 `data/papers.json` 저장 |
+| `verify` | `data/claims.json`의 각 수치가 초록에 있는지 대조 → `results/claim_verification.md` |
+| `search "질의"` | 후보 PMID 목록 (선택은 사람) |
+| `panel` | 리뷰어별 독립 프롬프트 생성. `--run`은 `ANTHROPIC_API_KEY`가 있을 때만 API 호출(키 없음, **실행해 본 적 없음**) |
+
+**수치 게이트가 실제로 잡은 것**: 첫 검증에서 `TV-plate sensitivity upper bound = 99`가 `unverified`로 나왔습니다. 초록은 "99.0%"로 표기했기 때문이며, 값을 `99.0`으로 고치자 통과했습니다. 같은 초록은 95.5%가 "8오류 기준", 99.0%가 "3오류 기준"임도 밝히고 있어 논문 표에 조건을 추가했습니다.
+
+**아직 없는 것**: 문헌 요약의 LLM 자동화, 리뷰어 패널 API 실행 결과, KNHANES 실측 데이터.

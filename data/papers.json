@@ -1,0 +1,46 @@
+[
+  {
+    "pmid": "22472762",
+    "found": true,
+    "title": "Worldwide prevalence of red-green color deficiency.",
+    "journal": null,
+    "year": "2012",
+    "pmcid": null,
+    "open_access": false,
+    "abstract": "Literature that describes the prevalence of inherited red-green color deficiency in different populations is reviewed. Large random population surveys show that the prevalence of deficiency in European Caucasians is about 8% in men and about 0.4% in women and between 4% and 6.5% in men of Chinese and Japanese ethnicity. However, the male: female prevalence ratio is markedly different in Europeans and Asians. Recent surveys suggest that the prevalence is rising in men of African ethnicity and in geographic areas that have been settled by incoming migrants. It is proposed that founder events and genetic drift, rather than natural selection, are the cause of these differences.",
+    "doi": "10.1364/josaa.29.000313"
+  },
+  {
+    "pmid": "27092927",
+    "found": true,
+    "title": "Comparison of Ishihara Booklet with Color Vision Smartphone Applications.",
+    "journal": null,
+    "year": "2016",
+    "pmcid": null,
+    "open_access": false,
+    "abstract": "<h4>Purpose</h4>To compare the standard Ishihara booklet with color-vision-testing smartphone applications.<h4>Methods</h4>A prospective observational diagnostic study on 42 normal trichromats and 38 color-deficient subjects. Patients were presented with three color vision tests in random order: an Ishihara test booklet and two color-vision-testing smartphone applications: Eye2Phone and the Color Vision Test application (CVT app). Sensitivity and specificity of the electronic tests was compared with Ishihara results, and in each one of these applications every plate was individually analyzed for success/failure rate.<h4>Results</h4>Average age was 42.7 ± 12.9 years. There were 57 males (71.2%). Sensitivity and specificity of each test was 100% (38/38) and 95.2% (40/42) for the Eye2Phone, and 100% (38/38) and 54.8% (23/42) for the CVT app. There was no significant difference between the Ishihara booklet and the Eye2Phone (p = 0.500), with a high kappa measure of agreement (0.950, p < 0.001). The CVT app was significantly different than both other tests (p < 0.001) with a low kappa measure of agreement (0.535 with the Ishihara and 0.575 with the Eye2Phone). Of the 21 tested plates, color-deficient subjects failed 11.8 ± 3.1 plates in the Ishihara booklet and 14.1 ± 2.1 plates in the Eye2Phone (p < 0.001). Significant plate-specific differences for the color-deficient group were found in plate numbers 3, 6, 7, 8, 9, 15, and 16. Both tests were poorly able to give an indication of the specific dichromatism type. The Ishihara booklet was rated more comfortable and clearer than the Eye2Phone in color-deficient subjects. The CVT app was rated lowest for comfort and clarity in both groups.<h4>Conclusions</h4>Smartphone applications testing for color vision deficiency are readily available; however, users of these apps should be aware that some may have different sensitivity for detection of color vision deficiency compared to Ishihara booklet, limiting their usefulness for clinical use. Therefore, further validation of these applications is required.",
+    "doi": "10.1097/opx.0000000000000873"
+  },
+  {
+    "pmid": "31688694",
+    "found": true,
+    "title": "Prevalence of Color Vision Deficiency in an Adult Population in South Korea.",
+    "journal": null,
+    "year": "2019",
+    "pmcid": null,
+    "open_access": false,
+    "abstract": "<h4>Significance</h4>Large differences in failure rates for color vision screening have been reported among different regional groups. However, color vision deficiency prevalence in Korea has only been investigated within a small area of the country.<h4>Purpose</h4>This study examines the prevalence of failing a color vision screening and its sex-related differences using a sample that is representative of the whole Korean population.<h4>Methods</h4>This population-based cross-sectional study evaluated 2686 subjects (age, 19 to 49 years) who participated in the sixth Korea National Health and Nutrition Examination Survey (2013). Color vision deficiency was assessed using the Hardy-Rand-Rittler (HRR) test by an ophthalmologist. According to standard criteria for the HRR, it classified each subject as color normal, protan, deutan, tritan, or unclassified color vision loss. All participants had comprehensive medical evaluations and ocular history taken.<h4>Results</h4>The weighted overall prevalence of color vision deficiency in the Korean population was 3.9% (95% confidence interval, 3.0 to 5.4%). The prevalence of color vision deficiency was higher in male participants (6.5%) than in female participants (1.1%). Among all participants, deutan deficiency (2.5%) had a higher prevalence than did protan deficiency (0.4%). For male participants who failed the HRR screening, deutan-type deficiency was detected most often (64.2%), whereas an unclassified color vision deficiency type was the most common (52.9%) among female participants who failed the HRR screening. As expected, male participants were more likely to fail the HRR screening compared with female participants (prevalence ratio, 6.08; 95% confidence interval, 3.61 to 10.26).<h4>Conclusions</h4>This large population-based study of color vision deficiency among Koreans gives the most accurate estimate of failing a color vision screening test to date and provides useful information for planning adaptive strategies.",
+    "doi": "10.1097/opx.0000000000001441"
+  },
+  {
+    "pmid": "9390366",
+    "found": true,
+    "title": "Efficiency of the Ishihara test for identifying red-green colour deficiency.",
+    "journal": null,
+    "year": "1997",
+    "pmcid": null,
+    "open_access": false,
+    "abstract": "The Ishihara test is the most widely used screening test for red-green colour deficiency. Results obtained by 401 people with red-green colour deficiency show that the combined sensitivity of the Transformation and Vanishing plates of the 38 plate Edition of the Ishihara plates is 95.5% on eight errors, 97.5% on six errors and 99.0% on three errors. The Hidden digit designs only identified approximately 50% of colour-deficient subjects. The protan/deutan classification plates were found to be more effective for deutans than for protans. No classification was obtained for 18% of protanopes and 3% of deuteranopes who saw neither figure on classification plates; 40% of protanomalous trichromats and 37.5% of deuteranomalous trichromats saw both classification figures and were classified on the relative luminance (clarity) of these figures. The specificity of the Ishihara test was determined in a previous study (Birch and McKeever, 1993) and the results combined with the present data to obtain the overall efficiency of the Ishihara plates for a representative cross section of colour-deficient subjects.",
+    "doi": "10.1046/j.1475-1313.1997.97000227.x"
+  }
+]
