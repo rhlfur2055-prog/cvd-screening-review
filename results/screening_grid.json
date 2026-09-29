@@ -1,0 +1,141 @@
+{
+  "overall_prev_wilson95": [
+    0.0323,
+    0.047
+  ],
+  "screening_grid": [
+    {
+      "scenario": "hidden-digit plate (sens .50)",
+      "group": "male",
+      "prevalence": 0.065,
+      "sens": 0.5,
+      "spec": 0.95,
+      "ppv": 0.41,
+      "npv": 0.9647,
+      "missed_per_1000": 32.5,
+      "false_alarm_per_1000": 46.8
+    },
+    {
+      "scenario": "hidden-digit plate (sens .50)",
+      "group": "female",
+      "prevalence": 0.011,
+      "sens": 0.5,
+      "spec": 0.95,
+      "ppv": 0.1,
+      "npv": 0.9942,
+      "missed_per_1000": 5.5,
+      "false_alarm_per_1000": 49.5
+    },
+    {
+      "scenario": "hidden-digit plate (sens .50)",
+      "group": "overall",
+      "prevalence": 0.039,
+      "sens": 0.5,
+      "spec": 0.95,
+      "ppv": 0.289,
+      "npv": 0.9791,
+      "missed_per_1000": 19.5,
+      "false_alarm_per_1000": 48.1
+    },
+    {
+      "scenario": "transformation+vanishing plate (sens .955)",
+      "group": "male",
+      "prevalence": 0.065,
+      "sens": 0.955,
+      "spec": 0.95,
+      "ppv": 0.57,
+      "npv": 0.9967,
+      "missed_per_1000": 2.9,
+      "false_alarm_per_1000": 46.8
+    },
+    {
+      "scenario": "transformation+vanishing plate (sens .955)",
+      "group": "female",
+      "prevalence": 0.011,
+      "sens": 0.955,
+      "spec": 0.95,
+      "ppv": 0.175,
+      "npv": 0.9995,
+      "missed_per_1000": 0.5,
+      "false_alarm_per_1000": 49.5
+    },
+    {
+      "scenario": "transformation+vanishing plate (sens .955)",
+      "group": "overall",
+      "prevalence": 0.039,
+      "sens": 0.955,
+      "spec": 0.95,
+      "ppv": 0.437,
+      "npv": 0.9981,
+      "missed_per_1000": 1.8,
+      "false_alarm_per_1000": 48.1
+    },
+    {
+      "scenario": "app, best specificity (.952), sens .955",
+      "group": "male",
+      "prevalence": 0.065,
+      "sens": 0.955,
+      "spec": 0.952,
+      "ppv": 0.58,
+      "npv": 0.9967,
+      "missed_per_1000": 2.9,
+      "false_alarm_per_1000": 44.9
+    },
+    {
+      "scenario": "app, best specificity (.952), sens .955",
+      "group": "female",
+      "prevalence": 0.011,
+      "sens": 0.955,
+      "spec": 0.952,
+      "ppv": 0.181,
+      "npv": 0.9995,
+      "missed_per_1000": 0.5,
+      "false_alarm_per_1000": 47.5
+    },
+    {
+      "scenario": "app, best specificity (.952), sens .955",
+      "group": "overall",
+      "prevalence": 0.039,
+      "sens": 0.955,
+      "spec": 0.952,
+      "ppv": 0.447,
+      "npv": 0.9981,
+      "missed_per_1000": 1.8,
+      "false_alarm_per_1000": 46.1
+    },
+    {
+      "scenario": "app, worst specificity (.548), sens .955",
+      "group": "male",
+      "prevalence": 0.065,
+      "sens": 0.955,
+      "spec": 0.548,
+      "ppv": 0.128,
+      "npv": 0.9943,
+      "missed_per_1000": 2.9,
+      "false_alarm_per_1000": 422.6
+    },
+    {
+      "scenario": "app, worst specificity (.548), sens .955",
+      "group": "female",
+      "prevalence": 0.011,
+      "sens": 0.955,
+      "spec": 0.548,
+      "ppv": 0.023,
+      "npv": 0.9991,
+      "missed_per_1000": 0.5,
+      "false_alarm_per_1000": 447.0
+    },
+    {
+      "scenario": "app, worst specificity (.548), sens .955",
+      "group": "overall",
+      "prevalence": 0.039,
+      "sens": 0.955,
+      "spec": 0.548,
+      "ppv": 0.079,
+      "npv": 0.9967,
+      "missed_per_1000": 1.8,
+      "false_alarm_per_1000": 434.4
+    }
+  ],
+  "note": "specificity .95 for plates is an ASSUMPTION (no source); see paper limitations"
+}
