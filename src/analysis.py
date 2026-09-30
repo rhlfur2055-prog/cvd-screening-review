@@ -29,6 +29,9 @@ SENS_HIDDEN = 0.50
 SENS_TV = (0.955, 0.99)
 # Sorkin et al., Optom Vis Sci 2016: app specificity 95.2% (best) vs 54.8% (worst)
 SPEC_APP = {"app_high_spec": 0.952, "app_low_spec": 0.548}
+# Sorkin 2016 abstract: both apps sensitivity 100% (38/38) -- measured against the
+# Ishihara booklet as reference (n=42 normal, 38 colour-deficient), not a gold standard
+SENS_APP = 1.0
 
 # --- helpers --------------------------------------------------------------
 
@@ -65,8 +68,8 @@ def main() -> None:
     scen = {
         "hidden-digit plate (sens .50)": (SENS_HIDDEN, 0.95),
         "transformation+vanishing plate (sens .955)": (SENS_TV[0], 0.95),
-        "app, best specificity (.952), sens .955": (SENS_TV[0], SPEC_APP["app_high_spec"]),
-        "app, worst specificity (.548), sens .955": (SENS_TV[0], SPEC_APP["app_low_spec"]),
+        "app, best specificity (.952), sens 1.0": (SENS_APP, SPEC_APP["app_high_spec"]),
+        "app, worst specificity (.548), sens 1.0": (SENS_APP, SPEC_APP["app_low_spec"]),
     }
     rows = []
     for name, (se, sp) in scen.items():

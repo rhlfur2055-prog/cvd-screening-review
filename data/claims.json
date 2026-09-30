@@ -53,5 +53,20 @@
   "claim": "Hidden-digit plates detect ~half of CVD",
   "value": "50",
   "pmid": "9390366"
+ },
+ {
+  "claim": "App sensitivity (both apps, vs Ishihara reference)",
+  "value": "100",
+  "pmid": "27092927"
+ },
+ {
+  "claim": "Sorkin colour-deficient n",
+  "value": "38",
+  "pmid": "27092927"
+ },
+ {
+  "claim": "Sorkin normal trichromat n",
+  "value": "42",
+  "pmid": "27092927"
  }
 ]

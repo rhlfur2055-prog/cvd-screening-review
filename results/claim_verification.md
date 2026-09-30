@@ -11,3 +11,6 @@
 | App specificity best | 95.2 | 27092927 | verified | False |
 | App specificity worst | 54.8 | 27092927 | verified | False |
 | Hidden-digit plates detect ~half of CVD | 50 | 9390366 | verified | False |
+| App sensitivity (both apps, vs Ishihara reference) | 100 | 27092927 | verified | False |
+| Sorkin colour-deficient n | 38 | 27092927 | verified | False |
+| Sorkin normal trichromat n | 42 | 27092927 | verified | False |

@@ -57,8 +57,8 @@ uv run src/build.py      # PDF·PPTX 재생성
 
 | 강의 파트 | 이 저장소 | 상태 |
 |---|---|---|
-| P1 논문 읽기 Skill | `.claude/skills/paper-reader/` (절차·스키마·판단 기준) | 작성됨, 실사용 검증 전 |
-| P1 실험 로그 Skill + 품질 규칙 | `.claude/skills/experiment-log/` | 작성됨, 실사용 검증 전 |
+| P1 논문 읽기 Skill | `.claude/skills/paper-reader/` (절차·스키마·판단 기준) | **검증됨(2026-09-30)**: Claude Code가 스킬을 인식·호출했고, 27092927에 적용해 논문의 앱 민감도 입력 오류를 찾아 교정 (`results/EXPERIMENT_LOG.md`) |
+| P1 실험 로그 Skill + 품질 규칙 | `.claude/skills/experiment-log/` | 스킬 목록에 인식됨. 형식에 맞춰 로그 1건 작성. 스킬 호출 자체는 아직 미실행 |
 | P2 Subagents | `.claude/agents/` — literature-reviewer, experiment-planner, critical-reviewer, writing-reviewer | 정의됨, 자동 실행 검증 전 |
 | P3 Hooks | `.claude/settings.json` + `.claude/hooks/` — 수치 게이트(claims 수정 시 재검증), 생성 파일 수동 수정 차단 | 훅 스크립트 단독 실행 테스트 완료(종료코드 확인). Claude Code 안에서의 실제 발동은 미확인 |
 | P3 Loop | `.claude/commands/research-loop.md` (종료 조건 3개, 사람 게이트) | 정의됨, 실행 안 해봄 |
